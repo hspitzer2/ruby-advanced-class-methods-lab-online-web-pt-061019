@@ -2,11 +2,12 @@ require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
-  @@song = song
+
 
 
   def self.all
     @@all
+    @song = song
   end
 
   def save
