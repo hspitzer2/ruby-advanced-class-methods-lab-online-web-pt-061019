@@ -52,7 +52,7 @@ class Song
    def self.new_from_filename(filename)
      song = self.new
      song.filename = (filename.split ( " - ")[1].chomp(".mp3"))
-     
+
 
      #shoud return `Taylor Swift - Blank Space.mp3`
    end
