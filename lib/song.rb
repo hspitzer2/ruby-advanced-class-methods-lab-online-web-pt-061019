@@ -3,7 +3,10 @@ class Song
   attr_accessor :name, :artist_name
   @@songs = []
 
-
+  def initialize(name)
+    @name = name
+    self.class.all << self
+  end
 
   def self.all
     @@songs
@@ -34,10 +37,6 @@ class Song
 
   def self.find_by_name(name)
     self.all.find{|songs| songs.name == name}
-    # @@songs.map do |name|
-    #   result = songs if song.name == name
-    #   result
-    # end
   end
 
   def self.find_or_create_by_name(name)
