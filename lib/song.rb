@@ -54,16 +54,11 @@ class Song
      song.name = (name.split(" - ")[1].chomp(".mp3"))
      song.artist_name = (name.split(" - ")[0])
      song
-     #shoud return `Taylor Swift - Blank Space.mp3`
    end
 
    def self.create_from_filename(name)
      song = self.new
-     song.save
-     self.new_from_filename
-
-
-    #  song = self.create_from_filename
+     song.save 
      song.name = (name.split(" - ")[1].chomp(".mp3"))
      song.artist_name = (name.split(" - ")[0])
      song
