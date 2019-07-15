@@ -33,7 +33,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    salf.all.find{|songs| songs.name == name}
+    self.all.find{|songs| songs.name == name}
     # @@songs.map do |name|
     #   result = songs if song.name == name
     #   result
