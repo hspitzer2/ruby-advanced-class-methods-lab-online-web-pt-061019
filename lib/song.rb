@@ -1,12 +1,12 @@
 require 'pry'
 class Song
   attr_accessor :name, :artist_name
-  @@all = []
+  @@songs = []
 
 
 
   def self.all
-    @@all
+    @@songs
   end
 
   def save
@@ -33,10 +33,11 @@ class Song
   end
 
   def self.find_by_name(name)
-    @@all.map do |name|
-      result = song if song.name == name
-      result
-    end
+    salf.all.find{|songs| songs.name == name}
+    # @@songs.map do |name|
+    #   result = songs if song.name == name
+    #   result
+    # end
   end
 
   def self.find_or_create_by_name(name)
@@ -50,10 +51,11 @@ class Song
    end
 
    def self.new_from_filename
-     filename = self.new
+     song.create + song.name.filename = self.new
      filename.name = filename
      @@all<< filename.save
      filename
+     #shoud return `Taylor Swift - Blank Space.mp3`
    end
 
   #  def self.create_from_filename
