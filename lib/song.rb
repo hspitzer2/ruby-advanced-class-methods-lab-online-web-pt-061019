@@ -57,10 +57,10 @@ class Song
      #shoud return `Taylor Swift - Blank Space.mp3`
    end
 
-   def self.create_from_filename
+   def self.create_from_filename(name)
      self.create
      self.new_from_filename
-     
+
     #  song = self.create_from_filename
     #  song.name = (name.split(" - ")[1].chomp(".mp3"))
     #  song.artist_name = (name.split(" - ")[0])
