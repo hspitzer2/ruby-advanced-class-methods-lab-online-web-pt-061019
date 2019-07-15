@@ -17,9 +17,9 @@ class Song
   end
 
   def self.create
-     song = self.new
-     song.save
-     song
+     songs = self.new
+     songs.save
+     songs
    end
 
   def self.new_by_name(name)
@@ -50,10 +50,7 @@ class Song
    end
 
    def self.new_from_filename
-     song.create + song.name.filename = self.new
-     filename.name = filename
-     @@all<< filename.save
-     filename
+
      #shoud return `Taylor Swift - Blank Space.mp3`
    end
 
@@ -62,6 +59,7 @@ class Song
   #  end
 
   #  def destroy_all
+    # self.all.cleear
   #    @@all.clear
   #       @@all = []
   #  end
