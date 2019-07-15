@@ -44,7 +44,7 @@ class Song
   end
 
   def self.alphabetical
-    @@all.sort_by { |songs| a <=> b }
+    self.all.sort_by { |song| a <=> b }
     puts song
    end
 
