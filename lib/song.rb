@@ -32,31 +32,29 @@ class Song
     @@all<< song.save
     song
   end
-  #
-  # def self.find_by_name(name)
-  #   @@all.each do |name|
-  #     result = song if song.name == name
-  #     result
-  #   end
-  #
-  # end
-  #
-  # def self.find_or_create_by_name(name)
-  #     self.find_by_name(name) || self.create_by_name(name)
-  # end
-  #
-  # def self.alphabetical
-  #   @@all.sort_by { |songs| a <=> b }
-  #   puts song
-  #  end
-  #
-  #  def self.new_from_filename
-  #
-  #  end
-  #
-  #  def self.create_from_filename
-  #
-  #  end
+
+  def self.find_by_name(name)
+    @@all.each do |name|
+      result = song if song.name == name
+      result
+    end
+  
+  def self.find_or_create_by_name(name)
+      self.find_by_name(name) || self.create_by_name(name)
+  end
+
+  def self.alphabetical
+    @@all.sort_by { |songs| a <=> b }
+    puts song
+   end
+
+   def self.new_from_filename
+
+   end
+
+   def self.create_from_filename
+
+   end
 
    def destroy_all
      @@all.clear
