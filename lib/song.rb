@@ -33,7 +33,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    @@all.each do |name|
+    @@all.map do |name|
       result = song if song.name == name
       result
     end
