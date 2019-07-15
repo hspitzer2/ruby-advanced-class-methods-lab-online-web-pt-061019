@@ -49,10 +49,13 @@ class Song
     puts song
    end
 
-  #  def self.new_from_filename
-   #
-  #  end
-   #
+   def self.new_from_filename
+     filename = self.new
+     filename.name = filename
+     @@all<< filename.save
+     filename
+   end
+
   #  def self.create_from_filename
    #
   #  end
