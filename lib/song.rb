@@ -47,11 +47,12 @@ class Song
     self.all.sort_by { |song| song.name }
   
    end
-
-   def self.new_from_filename
-
-     #shoud return `Taylor Swift - Blank Space.mp3`
-   end
+ end
+   # 
+  #  def self.new_from_filename
+   # 
+  #    #shoud return `Taylor Swift - Blank Space.mp3`
+  #  end
 
   #  def self.create_from_filename
    #
@@ -62,4 +63,3 @@ class Song
   #    @@all.clear
   #       @@all = []
   #  end
-# end
