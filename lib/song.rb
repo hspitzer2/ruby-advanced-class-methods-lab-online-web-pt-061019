@@ -48,16 +48,16 @@ class Song
 
    end
 
-   
+
    def self.new_from_filename(filename)
      song = self.new
      song.filename = filename.split ( " - ")
-   
+
      #shoud return `Taylor Swift - Blank Space.mp3`
    end
 
   #  def self.create_from_filename
-  #  
+  #
   #  end
 end
   #  def destroy_all
